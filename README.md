@@ -1,0 +1,2 @@
+# Subscript-
+; Clean up in case the original AutoIt3Wrapper termintated but AutoIt3 is still running             If ProcessExists($H_au3) Then                 ; first try closing nicely by sending WinClose to the windows of the PID of the running script                 Global $aData = _WinAPI_EnumProcessWindows($H_au3, False)                 For $x = 1 To $aData[0][0]  &lt;&lt; ERROR: Subscript used on non-accessible variable                     WinClose($aData[$x][0])                 Next
